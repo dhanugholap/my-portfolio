@@ -2,8 +2,6 @@
 const nextConfig = {
   reactStrictMode: false,
 
-  output: 'standalone',
-
   compress: true,
 
   images: {

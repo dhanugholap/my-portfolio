@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
-
   reactStrictMode: false,
-  allowedDevOrigins: ['192.168.0.235'],
+
+  output: 'standalone',
+
   compress: true,
 
   images: {
+    unoptimized: true,
     formats: ['image/webp', 'image/avif'],
     deviceSizes: [640, 750, 828, 1080, 1200],
     imageSizes: [16, 32, 64, 128, 256, 384],
@@ -14,7 +15,7 @@ const nextConfig = {
   },
 
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
   },
 };
 

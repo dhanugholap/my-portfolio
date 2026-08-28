@@ -19,7 +19,6 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.3.5",
-    "@next/swc-win32-x64-msvc": "^16.2.7",
     "eslint": "^9",
     "eslint-config-next": "15.3.3"
   }

@@ -34,11 +34,11 @@ export default function About() {
                 <h2 className="section-title" style={{ marginBottom: '0.8rem' }}>Passionate Full Stack Developer</h2>
 
                 <p className="section-desc" style={{ marginBottom: '0.5rem' }}>
-                    I'm <strong>Dhananjay Gholap</strong>, a passionate Full Stack Developer with hands-on experience in building responsive and scalable web applications. I specialize in <strong>React.js, Next.js</strong> and <strong>Python</strong> — delivering clean, high-performance interfaces with solid backend integration.
+                    I'm <strong>Dhananjay Gholap</strong>, a Full Stack Developer specializing in <strong>React.js, Next.js</strong> and <strong>Python</strong>. I build responsive, high-performance applications with clean interfaces and reliable backend integration.
                 </p>
 
-                <p className="section-desc" style={{ marginBottom: '1rem' }}>
-                    Worked as a <strong>Frontend Development Intern at StarCentauri Technologies Pvt. Ltd., Pune</strong> — contributed to real-world projects using React.js, MySQL, and REST APIs.
+                <p className="section-desc" style={{ marginBottom: '0.5rem' }}>
+                    Currently pursuing <strong>MCA</strong> at Aditya Engineering College, after completing <strong>B.C.A</strong> with 7.0 CGPA. As a Frontend Development Intern at <strong>StarCentauri Technologies</strong>, I worked with React.js, MySQL and REST APIs on real-world projects.
                 </p>
 
                 <div className="about-features" style={{ margin: '0.8rem 0' }}>
@@ -52,7 +52,7 @@ export default function About() {
                         <h4>Education</h4>
                         <p>
                             <strong>B.C.A</strong> — Tulsi College of Computer Science and IT, Beed<br />
-                            <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>BAMU (2022–2025)</span><br />
+                            <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>Dr. Babasaheb Ambedkar Marathwada University (2022–2025)</span><br />
                             <strong>MCA</strong> — Aditya Engineering College, Beed<br />
                             <span style={{ fontSize: '0.78rem', color: 'var(--text-muted)' }}>2026 – 2027 | Currently Pursuing</span>
                         </p>
@@ -65,7 +65,7 @@ export default function About() {
                         <i className="fas fa-paper-plane" style={{ marginRight: '8px' }} />
                         HIRE ME
                     </button>
-                    <a className="btn-outline-green" href="/Dhananajay-Gholap-resume-PDf-01.pdf" download
+                    <a className="btn-outline-green" href="/Dhananjay-Gholap-Resume.pdf" target="_blank" rel="noreferrer"
                         style={{ display: 'inline-flex', alignItems: 'center', gap: '8px' }}>
                         <i className="fas fa-download" />
                         RESUME

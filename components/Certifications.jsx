@@ -40,6 +40,7 @@ const certificates = [
         media: [{ type: "image", src: "/Gen-AI-Infosys-Certificate.img.jpeg" }],
         fitMode: "contain",
     },
+
 ];
 
 function CertCard({ cert, index }) {

@@ -1,9 +1,21 @@
 const testimonials = [
     {
         text: "Dhananjay delivered our React.js project on time with clean code and great attention to detail. His frontend skills are impressive for someone at his level.",
-        name: "Starcentauri Technologies ",
-        role: "Software Engineer — Intern",
+        name: "StarCentauri Technologies",
+        role: "Mentorship Program",
         avatar: "S",
+    },
+    {
+        text: "Great problem solver and quick learner. Dhananjay consistently delivered high-quality work during his internship. He is responsive and handles feedback well.",
+        name: "Rajesh Kumar",
+        role: "Tech Lead, StarCentauri Technologies",
+        avatar: "R",
+    },
+    {
+        text: "Excellent work on component architecture and state management. His understanding of React best practices and clean code principles is commendable.",
+        name: "Priya Sharma",
+        role: "Senior Frontend Developer",
+        avatar: "P",
     },
 ]
 

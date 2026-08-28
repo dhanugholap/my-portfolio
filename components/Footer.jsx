@@ -10,7 +10,7 @@ export default function Footer() {
                     <div className="footer-socials">
                         <a href="https://github.com/dhanugholap" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
                         <a href="https://linkedin.com/in/dhanu07" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
-                        <a href="https://instagram.com/30.dhanu_" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/__dhanu_2005/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
                     </div>
                 </div>
                 <div className="footer-links">

@@ -8,12 +8,12 @@ function Particles() {
         const ctx = canvas.getContext('2d')
         canvas.width = window.innerWidth
         canvas.height = window.innerHeight
-        const particles = Array.from({ length: 30 }, () => ({
-            x: Math.random() * canvas.width,
-            y: Math.random() * canvas.height,
-            r: Math.random() * 2 + 0.5,
-            dx: (Math.random() - 0.5) * 0.4,
-            dy: (Math.random() - 0.5) * 0.4,
+        const particles = Array.from({ length: 30 }, () => ({ 
+            x: Math.random() * canvas.width, 
+            y: Math.random() * canvas.height, 
+            r: Math.random() * 2 + 0.5, 
+            dx: (Math.random() - 0.5) * 0.4, 
+            dy: (Math.random() - 0.5) * 0.4, 
             alpha: Math.random() * 0.5 + 0.1,
             color: Math.random() > 0.5 ? '#00d4aa' : '#6c63ff',
         }))
@@ -47,12 +47,6 @@ export default function Hero() {
             <Particles />
             <div className="hero-image" data-aos="zoom-in" data-aos-delay="200">
                 <div className="hero-img-wrap">
-                    <div className="ring-3d-outer" />
-                    <div className="ring-3d-mid" />
-                    <div className="ring-3d-inner" />
-                    <div className="orbit-dot" />
-                    <div className="orbit-dot" />
-                    <div className="orbit-dot" />
                     <div className="hero-img-circle">
                         <img
                             src="/DSC_6460.jpeg"
@@ -70,7 +64,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="hero-badge">
-                    ⚡ <span>Software Developer</span> | Engineer
+                    ⚡ <span>Software Developer</span> | Engineer 
                 </div>
             </div>
 
@@ -81,30 +75,30 @@ export default function Hero() {
                 </h1>
                 <div className="hero-typing" data-aos="fade-up" data-aos-delay="300">
                     <TypeAnimation
-                        sequence={['React & Next.js Developer', 2000, 'Python Full Stack Developer', 2000, 'Software Engineer', 2000]}
+                        sequence={['Python Full Stack Developer', 2200, 'React & Next.js Developer', 2200, 'Software Engineer', 2200]}
                         wrapper="span" speed={50} repeat={Infinity}
                     />
                 </div>
                 <div data-aos="fade-up" data-aos-delay="400" className="hero-desc-box">
                     <p>
-                        Full Stack Developer with hands-on experience in building responsive and scalable web applications using React.js, Next.js, and Python. Strong expertise in frontend development, component-based architecture, and REST API integration, along with solid backend fundamentals. Skilled in creating high-performance, user-friendly interfaces and developing end-to-end solutions. Familiar with modern technologies including AI/Generative AI.
+                        Full Stack Developer building responsive, scalable web applications with React.js, Next.js, and Python. I focus on clean interfaces, reusable components, REST API integration, and practical end-to-end solutions.
                     </p>
                 </div>
                 <div className="hero-btns" data-aos="fade-up" data-aos-delay="500">
-                    <button className="btn-primary" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
+                    <button className="btn-primary hero-cta" onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}>
                         <span>LEARN MORE</span>
                     </button>
-                    <button className="btn-dark" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
+                    <button className="btn-dark hero-cta" onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}>
                         HIRE ME
                     </button>
-                    <a className="btn-outline-green" href="/Dhananjay Gholap.pdf resume  (6).pdf" download>
+                    <a className="btn-outline-green hero-cta" href="/Dhananjay-Gholap-Resume.pdf" target="_blank" rel="noreferrer">
                         <i className="fas fa-download"></i> RESUME
                     </a>
                 </div>
                 <div className="hero-socials" data-aos="fade-up" data-aos-delay="600">
                     <a href="https://github.com/dhanugholap" target="_blank" rel="noreferrer"><i className="fab fa-github"></i></a>
                     <a href="https://linkedin.com/in/dhanu07" target="_blank" rel="noreferrer"><i className="fab fa-linkedin"></i></a>
-                    <a href="https://instagram.com/30.dhanu_" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/__dhanu_2005/" target="_blank" rel="noreferrer"><i className="fab fa-instagram"></i></a>
                 </div>
             </div>
         </section>

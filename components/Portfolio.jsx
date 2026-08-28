@@ -6,17 +6,35 @@ const projects = [
         period: 'March 2026',
         desc: 'Fully responsive personal portfolio built with Next.js. Features dynamic theme switcher, smooth AOS animations, TypeAnimation hero section, Web3Forms contact form integration, and sections for Skills, Projects, Certifications & Experience.',
         github: 'https://github.com/dhanugholap/portfolio-Next-JS',
-        // live: 'https://dhananjaygholap.vercel.app/',
+        live: 'https://dhanugholap.vercel.app',
     },
     {
-        icon: 'fas fa-users',
-        title: 'Student Management System',
-        category: ['React.js', 'REST API', 'MySQL'],
+        icon: 'fas fa-building',
+        title: 'Real Estate Application',
+        category: ['React.js', 'Node.js', 'SQL'],
         period: 'Aug 2025',
-        desc: 'Dynamic Student Management System using React.js for efficiently managing student records. Implemented CRUD functionalities, reusable modular components, and fully responsive cross-browser compatible UI.',
-        github: 'https://github.com/dhanugholap',
-        live: null,
+        desc: 'Full-stack real estate website with property highlights, pricing, amenities, gallery, location details, and a site visit enquiry flow. Built using React.js, Node.js and SQL for a responsive property browsing experience.',
+        github: null,
+        live: 'https://realesatate1.netlify.app/',
     },
+    // {
+    //     icon: 'fas fa-shopping-cart',
+    //     title: 'E-Commerce Frontend Application',
+    //     category: ['React.js', 'Redux', 'JavaScript', 'CSS3'],
+    //     period: 'July 2025',
+    //     desc: 'Full-featured e-commerce platform frontend with product catalog, shopping cart, filtering and sorting. Implemented state management with Redux and responsive design.',
+    //     github: 'https://github.com/dhanugholap/ecommerce-frontend',
+    //     live: null,
+    // },
+    // {
+    //     icon: 'fas fa-film',
+    //     title: 'Movie Recommendation Engine',
+    //     category: ['React.js', 'REST API', 'JavaScript'],
+    //     period: 'June 2025',
+    //     desc: 'Movie recommendation app with API integration (TMDB). Features movie search, ratings, genre filtering, and detailed movie information with responsive UI.',
+    //     github: 'https://github.com/dhanugholap/movie-app',
+    //     live: null,
+    // },
 ]
 
 export default function Portfolio() {
@@ -32,40 +50,28 @@ export default function Portfolio() {
                     <div className="portfolio-card" key={p.title}
                         data-aos="fade-up" data-aos-delay={i * 150}>
                         <div className="portfolio-card-inner">
-                            <i className={p.icon}></i>
+                            <div className="portfolio-card-topline">
+                                <span className="portfolio-index">0{i + 1}</span>
+                                <span className="portfolio-period">{p.period}</span>
+                            </div>
+                            <div className="portfolio-icon"><i className={p.icon}></i></div>
                             <h3>{p.title}</h3>
-                            <p className="portfolio-period">{p.period}</p>
                             <p className="portfolio-desc">{p.desc}</p>
                             <div className="portfolio-tags">
                                 {p.category.map(tag => (
                                     <span key={tag} className="portfolio-tag">{tag}</span>
                                 ))}
                             </div>
-                            <div style={{ display: 'flex', gap: '10px', marginTop: '1rem' }}>
-                                <button
-                                    onClick={() => window.open(p.github, '_blank')}
-                                    style={{
-                                        display: 'inline-flex', alignItems: 'center', gap: '6px',
-                                        padding: '7px 16px', borderRadius: '20px',
-                                        border: '1px solid var(--border)', color: 'var(--text)',
-                                        fontSize: '0.78rem', fontWeight: 600,
-                                        background: 'var(--bg-card)', transition: 'all 0.2s',
-                                        cursor: 'pointer',
-                                    }}>
-                                    <i className="fab fa-github" /> GitHub
-                                </button>
+                            <div className="portfolio-actions">
+                                {p.github && (
+                                    <a className="portfolio-action portfolio-action-secondary" href={p.github} target="_blank" rel="noreferrer">
+                                        <i className="fab fa-github" /> GitHub
+                                    </a>
+                                )}
                                 {p.live && (
-                                    <button
-                                        onClick={() => window.open(p.live, '_blank')}
-                                        style={{
-                                            display: 'inline-flex', alignItems: 'center', gap: '6px',
-                                            padding: '7px 16px', borderRadius: '20px',
-                                            background: 'linear-gradient(135deg, var(--primary), var(--secondary))',
-                                            color: '#fff', fontSize: '0.78rem', fontWeight: 600,
-                                            border: 'none', cursor: 'pointer', transition: 'all 0.2s',
-                                        }}>
+                                    <a className="portfolio-action portfolio-action-primary" href={p.live} target="_blank" rel="noreferrer">
                                         <i className="fas fa-external-link-alt" /> Live
-                                    </button>
+                                    </a>
                                 )}
                             </div>
                         </div>

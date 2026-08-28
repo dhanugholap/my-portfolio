@@ -21,7 +21,7 @@ export default function Skills() {
                 <p className="section-desc">
                     Hands-on experience with React.js, Next.js, Python, and MySQL.
                     Certified Python Full Stack Developer from TechnoSignia Software Training Institute.
-                    Proficient in Git, GitHub, VS Code, Postman, and AI tools like ChatGPT, GitHub Copilot, Gemini, Claude, Cursor AI.
+                    Proficient in Git, GitHub, VS Code, Postman, IntelliJ IDEA, PyCharm, Eclipse, Sublime Text, and AI tools like ChatGPT, GitHub Copilot, Gemini, Claude, Cursor AI.
                     Additional knowledge in AI / Generative AI and Prompt Engineering.
                 </p>
                 <br />

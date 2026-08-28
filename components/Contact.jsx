@@ -15,7 +15,7 @@ export default function Contact() {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    access_key: '2fa8514b-e4e3-494c-921a-26dc072ab16c',
+                    access_key: '2fa8514b-e4e3-494c-921a-26dc072ab16c', 
                     name: form.name,
                     email: form.email,
                     subject: form.subject,
@@ -40,7 +40,7 @@ export default function Contact() {
                 <p className="section-tag">contact</p>
                 <h2 className="section-title">Get in Touch</h2>
                 <p className="section-desc">
-                    Feel free to reach out for collaborations, freelance work, or just a friendly hello.
+                    Have a project in mind? Let's collaborate and create something amazing together. I'm available for freelance work, consulting, or full-time opportunities. Reach out and let's start a conversation!
                 </p>
                 <br />
                 {[
@@ -48,7 +48,7 @@ export default function Contact() {
                     { icon: 'fas fa-phone', label: 'Phone', value: '+91 8805451745', link: 'tel:+918805451745' },
                     { icon: 'fas fa-map-marker-alt', label: 'Location', value: 'Pune, Maharashtra, India', link: null },
                     { icon: 'fab fa-linkedin', label: 'LinkedIn', value: 'dhanu07', link: 'https://linkedin.com/in/dhanu07' },
-                    { icon: 'fab fa-instagram', label: 'Instagram', value: '@30.dhanu_', link: 'https://instagram.com/30.dhanu_' },
+                    { icon: 'fab fa-instagram', label: 'Instagram', value: '@__dhanu_2005', link: 'https://www.instagram.com/__dhanu_2005/' },
                 ].map(item => (
                     <div className="contact-info-item" key={item.label}>
                         <div className="contact-icon"><i className={item.icon}></i></div>
@@ -87,7 +87,7 @@ export default function Contact() {
                     </div>
                     {status.success && <p style={{ color: 'var(--primary)', fontWeight: '600', fontSize: '0.9rem' }}>{status.success}</p>}
                     {status.error && <p style={{ color: '#f87171', fontWeight: '600', fontSize: '0.9rem' }}>{status.error}</p>}
-                    <button type="submit" className="btn-primary" disabled={status.loading}>
+                    <button type="submit" className="btn-primary send-message-btn" disabled={status.loading}>
                         {status.loading ? 'SENDING...' : 'SEND MESSAGE'}
                     </button>
                 </form>

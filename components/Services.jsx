@@ -1,9 +1,10 @@
 const services = [
-    { icon: 'fab fa-react', title: 'React JS Development', desc: 'Creating fast, dynamic and interactive frontend web applications using React JS with component-based architecture.' },
-    { icon: 'fas fa-code', title: 'Next JS Development', desc: 'Building server-side rendered and statically generated web apps with Next.js for better performance and SEO.' },
-    { icon: 'fab fa-python', title: 'Python Development', desc: 'Building backend systems, automation scripts and data processing applications using Python.' },
-    { icon: 'fas fa-database', title: 'MySQL & Database', desc: 'Designing and managing relational databases with optimized queries and efficient data structures.' },
-    { icon: 'fas fa-mobile-alt', title: 'Responsive UI Design', desc: 'Designing fully responsive, mobile-first interfaces that work seamlessly across all devices and browsers.' },
+    { icon: 'fab fa-react', title: 'React JS Development', desc: 'Building fast, dynamic, and interactive frontend applications using React with component-based architecture, hooks, and state management for scalable solutions.' },
+    { icon: 'fas fa-code', title: 'Next JS Development', desc: 'Developing server-side rendered and statically generated web apps with Next.js for superior performance, SEO optimization, and dynamic routing.' },
+    { icon: 'fab fa-python', title: 'Python Development', desc: 'Building robust backend systems, automation scripts, and data processing applications using Python with clean, maintainable code.' },
+    { icon: 'fas fa-database', title: 'MySQL & Databases', desc: 'Designing and managing relational databases with optimized queries, efficient data structures, and proper indexing strategies.' },
+    { icon: 'fas fa-mobile-alt', title: 'Responsive UI/UX Design', desc: 'Creating fully responsive, mobile-first interfaces that work seamlessly across all devices with excellent user experience and accessibility.' },
+    { icon: 'fas fa-code-branch', title: 'Full Stack Solutions', desc: 'Developing complete end-to-end solutions combining React.js frontend with Python backend, REST APIs, and database integration.' },
 ]
 
 export default function Services() {
